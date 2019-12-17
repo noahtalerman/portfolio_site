@@ -1,0 +1,33 @@
+:root {
+    --yellow: #FFF0B1;
+    --blue: #355FE6;
+}
+
+body, div, p, h1, h2, h3, h4, a, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+body, div {
+    background-color: var(--yellow);
+}
+
+a, h1, h2, h3, h4 {
+    font-family: 'futura pt', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'georgia', serif;
+}
+
+button {
+    border:none;
+    font-family: 'futura pt';
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+}
