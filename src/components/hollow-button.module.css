@@ -3,7 +3,7 @@
     font-size: 17px;
     border: 1px solid var(--blue);
     border-radius: 8px;
-    padding: 5px 5px;
+    padding: 5px 10px;
     color: var(--blue);
     transition: transform 0.2s ease-in-out;
 }

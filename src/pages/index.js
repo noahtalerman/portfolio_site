@@ -6,8 +6,5 @@ import HollowButton from "../components/hollow-button.js"
 export default () => (
     <Container>  
         <Hero />
-        <HollowButton 
-            text="Resume"
-        />
     </Container>
 )

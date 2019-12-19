@@ -1,5 +1,6 @@
 import React from "react"
 import heroStyles from "../components/hero.module.css"
+import HollowButton from "../components/hollow-button.js"
 
 const SubText = () => {
     return (
@@ -31,6 +32,9 @@ const Hero = () => {
                 subTitle="Designer and Developer" 
             />
             <SubText />
+            <HollowButton 
+                text="Resume"
+            />
         </div>
     )
 }

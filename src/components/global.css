@@ -31,3 +31,7 @@ button {
     box-shadow: none;
     cursor: pointer;
 }
+
+button:focus{
+    outline: none;
+}
