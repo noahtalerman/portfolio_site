@@ -1,0 +1,10 @@
+.card-wrap {
+    grid-column: 5 / 8;
+    display: grid;
+    grid-template-columns: repeat(3, calc(1525vw/144));
+    grid-column-gap: calc(100vw / 72);
+    grid-template-rows: repeat(3, calc(100%/3));
+    grid-row-gap: calc(100vw / 72);
+    height: 50vh;
+    padding: 60px 0;
+}

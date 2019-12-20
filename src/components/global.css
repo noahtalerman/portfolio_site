@@ -1,6 +1,8 @@
 :root {
     --yellow: #FFF0B1;
     --blue: #355FE6;
+    --dark-grey: #333333;
+    --light-grey: #F2F2F2F2;
 }
 
 body, div, p, h1, h2, h3, h4, a, ul, li, button {

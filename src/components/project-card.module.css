@@ -1,0 +1,50 @@
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    overflow: hidden;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    overflow: hidden;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    overflow: hidden;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+}
+
+.card-4 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    overflow: hidden;
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
+}
+
+.project-description {
+    font-family: 'futura pt', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: var(--light-grey);
+    opacity: 80%;
+    color: var(--dark-grey);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-image {
+    height: 100%;
+}
