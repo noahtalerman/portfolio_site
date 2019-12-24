@@ -1,5 +1,13 @@
+.main-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
 .main-nav-inner {
-    padding-left: calc(10vw / 3);
+    padding-left: calc(100vw / 36);
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -8,6 +16,7 @@
 
 .nav-element {
     transition: transform 0.2s ease-in-out;
+    min-width: 80px;
 }
 
 .nav-element-text {
@@ -18,9 +27,12 @@
     margin-right: 20px;
     display: block;
     border-bottom: 2px solid var(--yellow);
-    /* transition: border-bottom 0.2s linear; */
+}
+
+.nav-element-text-active {
+    font-weight: 500;
 }
 
 .nav-element-text:hover {
-    /* border-bottom: 2px solid var(--blue); */
+    text-decoration: underline;
 }

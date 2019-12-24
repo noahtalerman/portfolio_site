@@ -11,7 +11,8 @@ const NavElement = (props) => {
                 to={props.location} 
                 onMouseEnter={ (e) => props.linkEnter(e) } 
                 onMouseLeave={ (e) => props.linkLeave(e) }
-                className={ navStyles.navElementText }>
+                className={ navStyles.navElementText }
+                activeClassName={ `${navStyles.navElementText} ${navStyles.navElementTextActive}` }>
                 { props.text }
             </Link>
         </li>
@@ -25,11 +26,11 @@ const Navigation = () => {
     })
 
     const linkEnter = (e) => {
-        e.target.parentNode.style.setProperty('transform', 'translateY(-5px)')
+        e.target.parentNode.style.setProperty('transform', 'translateY(-5px)');
     }
 
     const linkLeave = (e) => {
-        e.target.parentNode.style.setProperty('transform', 'translateY(0)')
+        e.target.parentNode.style.setProperty('transform', 'translateY(0)');
     }
 
     return (

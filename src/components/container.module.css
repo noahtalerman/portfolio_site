@@ -1,7 +1,23 @@
 .main-container {
     display: grid;
-    grid-template-columns: repeat(8, calc(1525vw/144));
-    grid-column-gap: calc(100vw / 72);
-    padding: 0 calc(100vw / 36);
+    grid-template-columns: repeat(4, 89px);
+    grid-column-gap: 16px;
+    padding: 0 calc((100vw - 404px)/2);
     height: 100%;
+}
+
+@media screen and (min-width: 869px) {
+    .main-container {
+        grid-template-columns: repeat(8, calc(1525vw/144));
+        grid-column-gap: calc(100vw / 72);
+        padding: 0 calc(100vw / 36);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container {
+        grid-template-columns: repeat(8, 128px);
+        grid-column-gap: 16px;
+        padding: 0 calc((100vw - 1136px)/2);
+    }
 }
