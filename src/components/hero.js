@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import heroStyles from "../components/hero.module.css"
 
 const SubText = () => {
@@ -22,6 +22,9 @@ const Title = (props) => {
 }
 
 const Hero = () => {
+    useEffect(() => {
+        console.log('rerender')
+    })
     return (
         <div className={ heroStyles.heroMain }>
             <Title
@@ -35,6 +38,6 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default React.memo(Hero)
 
  
