@@ -17,6 +17,7 @@
 @media screen and (min-width: 1200px) {
     .main-container {
         grid-template-columns: repeat(8, 128px);
+        grid-template-rows: repeat(2, 50vh);
         grid-column-gap: 16px;
         padding: 0 calc((100vw - 1136px)/2);
     }

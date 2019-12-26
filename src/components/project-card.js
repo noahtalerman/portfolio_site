@@ -34,7 +34,14 @@ const Preview = (props) => {
     }
 
     return (
-        <Link to={ props.location } className={ `${projectCardStyles.card} ${props.style}` } onMouseOver={ (e) => handleMouseOver(e) } onMouseOut={ (e) => handleMouseLeave(e) }>
+        <Link 
+            to={ props.location } 
+            className={ `${projectCardStyles.card} ${props.style}` } 
+            onMouseOver={ (e) => handleMouseOver(e) } 
+            onMouseOut={ (e) => handleMouseLeave(e) }
+            onFocus={ (e) => handleMouseOver(e) }
+            onBlur={ (e) => handleMouseLeave(e) }
+        >
             <Info
                 title={props.title} 
             />

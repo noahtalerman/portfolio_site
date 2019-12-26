@@ -1,13 +1,27 @@
 .main-nav {
+    grid-column: 1 / 5;
     position: sticky;
     position: -webkit-sticky;
+    padding-top: 10px;
     top: 0;
     left: 0;
-    background-color: transparent;
+    z-index: 1;
+    background-color: var(--yellow);
+}
+
+@media screen and (min-width: 869px) {
+    .main-nav {
+        grid-column: 3 / 7;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-nav {
+        grid-column: 2 / 4;
+    }    
 }
 
 .main-nav-inner {
-    padding-left: calc(100vw / 36);
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -16,21 +30,23 @@
 
 .nav-element {
     transition: transform 0.2s ease-in-out;
-    min-width: 80px;
+    min-width: calc(100%/3);
+    text-align: center;
 }
 
 .nav-element-text {
-    color: var(--blue);
+    color: var(--dark-grey);
+    background-color: var(--yellow);
+    outline: 1px solid var(--dark-grey);
     font-size: 17px;
     text-decoration: none;
-    padding: 20px 0 20px 0;
-    margin-right: 20px;
+    padding: 4px 0 4px 0;
     display: block;
-    border-bottom: 2px solid var(--yellow);
 }
 
 .nav-element-text-active {
-    font-weight: 500;
+    color: var(--light-grey);
+    background-color: var(--dark-grey);
 }
 
 .nav-element-text:hover {

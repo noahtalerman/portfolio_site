@@ -16,6 +16,7 @@
 @media screen and (min-width: 1200px) {
     .card-wrap {
         grid-column: 5 / 8;
+        grid-row: 1 / 3;
         padding: 60px 0;
     }
 }

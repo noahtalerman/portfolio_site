@@ -12,8 +12,10 @@ const buttoneLeave = (e) => {
 export default (props) => (
     <button 
         className={ hollowButtonStyles.hollowButton }
-        onMouseEnter={buttonEnter}
-        onMouseLeave={buttoneLeave}
+        onMouseOver={buttonEnter}
+        onMouseut={buttoneLeave}
+        onFocus={buttonEnter}
+        onBlur={buttoneLeave}
     >
         { props.text }
     </button>

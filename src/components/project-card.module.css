@@ -38,15 +38,14 @@
 .project-title {
     font-family: 'futura pt', sans-serif;
     font-size: 22px;
-    color: var(--blue);
+    color: var(--dark-grey);
 }
 
 .project-description {
-    font-family: 'futura pt', sans-serif;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 22.5px;
     text-decoration: none;
-    color: var(--grey);
+    color: var(--dark-grey);
     transition: transform 0.2s ease-in-out;
 }
 

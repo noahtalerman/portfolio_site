@@ -8,9 +8,7 @@ const NavElement = (props) => {
     return (
         <li className={ navStyles.navElement }>
             <Link 
-                to={props.location} 
-                onMouseEnter={ (e) => props.linkEnter(e) } 
-                onMouseLeave={ (e) => props.linkLeave(e) }
+                to={props.location}
                 className={ navStyles.navElementText }
                 activeClassName={ `${navStyles.navElementText} ${navStyles.navElementTextActive}` }>
                 { props.text }
@@ -43,8 +41,14 @@ const Navigation = () => {
                     linkLeave={linkLeave}
                 />
                 <NavElement 
-                    text="About"
-                    location="/about/"
+                    text="Resume"
+                    location="/resume/"
+                    linkEnter={linkEnter}
+                    linkLeave={linkLeave}
+                />
+                <NavElement 
+                    text="Media"
+                    location="/media/"
                     linkEnter={linkEnter}
                     linkLeave={linkLeave}
                 />
